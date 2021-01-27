@@ -100,9 +100,14 @@ public class Resume {
 	public static void printCGPA() {
 		Scanner in = new Scanner (System.in);
 		
-		System.out.print("Enter your CGPA (STPM) :");
-		double cgpa = in.nextDouble();
-		System.out.println("CGPA (STPM) : " + cgpa);
+		System.out.print("Enter your GPA Semester 1 :");
+		double gpa1 = in.nextDouble();
+		System.out.print("Enter your GPA Semester 2 :");
+		double gpa2 = in.nextDouble();
+		System.out.print("Enter your GPA Semester 3 :");
+		double gpa3 = in.nextDouble();
+		double cgpa=(gpa1+gpa2+gpa3)/3;
+		System.out.println("CGPA for current semester : " + cgpa);
 		
 	}
 	
